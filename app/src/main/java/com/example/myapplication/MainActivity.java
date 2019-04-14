@@ -9,13 +9,9 @@ import android.widget.EditText;
 import com.example.myapplication.models.User;
 import com.example.myapplication.repositories.RowMapper;
 import com.example.myapplication.repositories.UsersRepositoryJdbcImpl;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Properties;
 
 public class MainActivity extends AppCompatActivity {
     Button button1;
