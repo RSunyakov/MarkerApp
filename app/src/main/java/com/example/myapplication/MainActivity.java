@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void click1(View view){
-        setContentView(R.layout.activity_main1);
+        setContentView(R.layout.activity_audience);
     }
 
     public void click2(View view){
