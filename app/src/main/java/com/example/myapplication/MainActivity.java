@@ -1,24 +1,18 @@
 package com.example.myapplication;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.example.myapplication.models.User;
-import com.example.myapplication.repositories.RowMapper;
-import com.example.myapplication.repositories.UsersRepositoryJdbcImpl;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
-import java.util.Properties;
+import com.example.myapplication.data.MarkerAppDbHelper;
 
 public class MainActivity extends AppCompatActivity {
     Button button1;
+
+    private MarkerAppDbHelper mDbHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,10 +31,6 @@ public class MainActivity extends AppCompatActivity {
         String login = String.valueOf(editText1.getText());
         EditText editText2 = findViewById(R.id.passwordEdit);
         String password = String.valueOf(editText2.getText());
-        UsersRepositoryJdbcImpl ur = new UsersRepositoryJdbcImpl();
-        User user = ur.find(login, password);
-        if(user != null){
-            setContentView(R.layout.activity_main);
-        }
+        SQLiteDatabase db = mDbHelper.getReadableDatabase();
     }
 }
