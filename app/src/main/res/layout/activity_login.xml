@@ -53,8 +53,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textSize="34sp"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="@android:color/white"
+            android:textSize="34sp" />
 
         <Button
             android:id="@+id/button2"
