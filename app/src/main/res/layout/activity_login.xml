@@ -65,5 +65,11 @@
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="click2"
             android:text="Войти" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
