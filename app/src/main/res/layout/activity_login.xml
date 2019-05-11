@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Логин"
             android:textColor="@android:color/white"
-            android:textSize="34sp"
+            android:textSize="30sp"
             android:textStyle="italic" />
 
         <EditText
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@android:color/white"
-            android:textSize="34sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/password"
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:text="Пароль"
             android:textColor="@android:color/white"
-            android:textSize="34sp"
+            android:textSize="30sp"
             android:textStyle="italic" />
 
         <EditText
@@ -55,7 +55,7 @@
             android:ems="10"
             android:inputType="textPassword"
             android:textColor="@android:color/white"
-            android:textSize="34sp" />
+            android:textSize="30sp" />
 
         <Button
             android:id="@+id/button2"
@@ -64,12 +64,13 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|bottom"
             android:onClick="click2"
-            android:text="Войти" />
+            android:text="Войти"
+            android:textColor="@android:color/white" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            tools:visibility="invisible" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
