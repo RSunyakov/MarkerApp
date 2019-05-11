@@ -1,18 +1,12 @@
 package com.example.myapplication.data;
 
 import android.content.Context;
-import android.database.DatabaseErrorHandler;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Build;
-
-import android.support.annotation.RequiresApi;
-import android.util.Log;
 
 public class MarkerAppDbHelper extends SQLiteOpenHelper {
-    public static final String LOG_TAG = MarkerAppContract.class.getSimpleName();
 
-    private static final String DATABASE_NAME = "markerapp_users.db";
+    private static final String DATABASE_NAME = "markerapp";
 
     private static final int DATABASE_VERSION = 1;
 
