@@ -38,6 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
+                    android:onClick="click3"
                     android:text="1301"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -47,6 +48,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="click3"
                     android:text="1302"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -62,6 +64,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1303"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -71,6 +74,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1304"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -86,6 +90,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:onClick="click3"
                     android:text="1305"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -95,6 +100,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1306"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -110,6 +116,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1307"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -119,6 +126,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1308"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -134,6 +142,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1309"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -143,6 +152,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1310"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -158,6 +168,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1311"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
@@ -167,6 +178,7 @@
                     style="@style/Widget.AppCompat.Button.Colored"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:onClick="click3"
                     android:text="1312"
                     android:textColor="@android:color/white"
                     android:textSize="20sp" />
