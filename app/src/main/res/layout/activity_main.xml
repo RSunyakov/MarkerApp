@@ -37,7 +37,8 @@
                 android:layout_gravity="center_horizontal|bottom"
                 android:onClick="click1"
                 style="@style/Widget.AppCompat.Button.Colored"
-                android:text="Войти в аккаунт" />
+                android:text="Войти в аккаунт"
+                android:textColor="@android:color/white"/>
         </LinearLayout>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
