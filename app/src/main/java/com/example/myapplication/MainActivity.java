@@ -54,11 +54,6 @@ public class MainActivity extends AppCompatActivity {
                 null,                  // Don't filter by row groups
                 null);                   // порядок сортировки
         TextView displayTextView = (TextView) findViewById(R.id.textView);
-            displayTextView.setText("Таблица содержит " + cursor.getCount() + " записей.\n\n");
-            displayTextView.append(MarkerAppContract.UserEntry._ID + " - " +
-                    MarkerAppContract.UserEntry.COLUMN_LOGIN + " - " +
-                    MarkerAppContract.UserEntry.COLUMN_PASSWORD + " - " + "\n");
-
             // Узнаем индекс каждого столбца
             int loginColumnIndex = cursor.getColumnIndex(MarkerAppContract.UserEntry.COLUMN_LOGIN);
             int passwordColumnIndex = cursor.getColumnIndex(MarkerAppContract.UserEntry.COLUMN_PASSWORD);
