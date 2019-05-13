@@ -30,10 +30,10 @@ public class MarkerAppDbHelper extends SQLiteOpenHelper {
         String SQL_CREATE_AUDIENCE_TABLE = "CREATE TABLE " + MarkerAppContract.AudienceEntry.TABLE_NAME + " ("
                 + MarkerAppContract.AudienceEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + MarkerAppContract.AudienceEntry.COLUMN_AUDIENCE + " TEXT NOT NULL, "
-                + MarkerAppContract.AudienceEntry.COLUMN_REDMARKER + "INTEGER, "
-                + MarkerAppContract.AudienceEntry.COLUMN_BLUEMARKER + "INTEGER, "
-                + MarkerAppContract.AudienceEntry.COLUMN_GREENMARKER + "INTEGER, "
-                + MarkerAppContract.AudienceEntry.COLUMN_BLACKMARKER + "INTEGER);";
+                + MarkerAppContract.AudienceEntry.COLUMN_REDMARKER + " INTEGER, "
+                + MarkerAppContract.AudienceEntry.COLUMN_BLUEMARKER + " INTEGER, "
+                + MarkerAppContract.AudienceEntry.COLUMN_GREENMARKER + " INTEGER, "
+                + MarkerAppContract.AudienceEntry.COLUMN_BLACKMARKER + " INTEGER);";
         // Запускаем создание таблицы
         db.execSQL(SQL_CREATE_USERS_TABLE);
         db.execSQL(SQL_CREATE_AUDIENCE_TABLE);

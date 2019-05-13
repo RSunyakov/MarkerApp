@@ -17,6 +17,10 @@ import com.example.myapplication.data.MarkerAppDbHelper;
 public class MainActivity extends AppCompatActivity {
     private String login;
     private String password;
+    ProgressBar redMarker;
+    ProgressBar blueMarker;
+    ProgressBar greenMarker;
+    ProgressBar blackMarker;
     Button button1;
     Button button2;
     Button button21;
@@ -44,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void click1(View view){
         setContentView(R.layout.activity_login);
-        mDbHelper = new MarkerAppDbHelper(this);
+        /*mDbHelper = new MarkerAppDbHelper(this);
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
         ContentValues values = new ContentValues();
         values.put(MarkerAppContract.AudienceEntry.COLUMN_AUDIENCE, "1301");
@@ -64,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         values.put(MarkerAppContract.UserEntry.COLUMN_LOGIN, "Syunek");
         values.put(MarkerAppContract.UserEntry.COLUMN_PASSWORD, "123");
         db.insert(MarkerAppContract.UserEntry.TABLE_NAME, null, values);
-
+*/
     }
 
     public void click2(View view){
@@ -118,59 +122,9 @@ public class MainActivity extends AppCompatActivity {
                         currentLogin + " - " +
                         currentPassword));*/
             }
-            switch (view.getId()) {
-                case R.id.button21 :
-                    button21 = findViewById(R.id.button21);
-                    audienceNumber = button21.getText().toString();
-                    break;
-                case R.id.button22 :
-                    button22 = findViewById(R.id.button22);
-                    audienceNumber = button22.getText().toString();
-                    break;
-                case R.id.button23 :
-                    button23 = findViewById(R.id.button23);
-                    audienceNumber = button23.getText().toString();
-                    break;
-                case R.id.button24 :
-                    button24 = findViewById(R.id.button24);
-                    audienceNumber = button24.getText().toString();
-                    break;
-                case R.id.button25 :
-                    button25 = findViewById(R.id.button25);
-                    audienceNumber = button25.getText().toString();
-                    break;
-                case R.id.button26 :
-                    button26 = findViewById(R.id.button26);
-                    audienceNumber = button26.getText().toString();
-                    break;
-                case R.id.button27 :
-                    button27 = findViewById(R.id.button27);
-                    audienceNumber = button27.getText().toString();
-                    break;
-                case R.id.button28 :
-                    button28 = findViewById(R.id.button28);
-                    audienceNumber = button28.getText().toString();
-                    break;
-                case R.id.button29 :
-                    button29 = findViewById(R.id.button29);
-                    audienceNumber = button29.getText().toString();
-                    break;
-                case R.id.button30 :
-                    button30 = findViewById(R.id.button30);
-                    audienceNumber = button30.getText().toString();
-                    break;
-                case R.id.button31 :
-                    button31 = findViewById(R.id.button31);
-                    audienceNumber = button31.getText().toString();
-                    break;
-                case R.id.button32 :
-                    button32 = findViewById(R.id.button32);
-                    audienceNumber = button32.getText().toString();
-                    break;
-            }
     }
 
-    public void click3(View view) {
+    private void setProgres() {
         mDbHelper = new MarkerAppDbHelper(this);
         SQLiteDatabase db = mDbHelper.getReadableDatabase();
         String[] projection = {
@@ -200,10 +154,6 @@ public class MainActivity extends AppCompatActivity {
             int currentBlueMarker = cursor.getInt(blueMarkerColumnIndex);
             int currentGreenMarker = cursor.getInt(greenMarkerColumnIndex);
             int currentBlackMarker = cursor.getInt(blackMarkerColumnIndex);
-            ProgressBar redMarker = findViewById(R.id.progressBar);
-            ProgressBar blueMarker = findViewById(R.id.progressBar2);
-            ProgressBar greenMarker = findViewById(R.id.progressBar3);
-            ProgressBar blackMarker = findViewById(R.id.progressBar4);
             if (currentAudience.equals(audienceNumber)) {
                 redMarker.setProgress(currentRedMarker);
                 blueMarker.setProgress(currentBlueMarker);
@@ -211,6 +161,81 @@ public class MainActivity extends AppCompatActivity {
                 blackMarker.setProgress(currentBlackMarker);
             }
         }
-        setContentView(R.layout.activity_markers);
+    }
+    public void click21(View view) {
+        setContentView(R.layout.activity_audience);
+        audienceNumber = "1301";
+        redMarker = (ProgressBar) view.findViewById(R.id.progressBar);
+        blueMarker = view.findViewById(R.id.progressBar2);
+        greenMarker = findViewById(R.id.progressBar3);
+        blackMarker = findViewById(R.id.progressBar4);
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click22(View view) {
+        audienceNumber = "1302";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click23(View view) {
+        audienceNumber = "1303";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click24(View view) {
+        audienceNumber = "1304";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click25(View view) {
+        audienceNumber = "1305";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click26(View view) {
+        audienceNumber = "1306";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click27(View view) {
+        audienceNumber = "1307";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click28(View view) {
+        audienceNumber = "1308";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click29(View view) {
+        audienceNumber = "1309";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click30(View view) {
+        audienceNumber = "1310";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click31(View view) {
+        audienceNumber = "1311";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
+    }
+
+    public void click32(View view) {
+        audienceNumber = "1312";
+        this.setProgres();
+        setContentView(R.layout.activity_audience);
     }
 }

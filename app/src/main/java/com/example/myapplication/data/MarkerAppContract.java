@@ -19,7 +19,7 @@ public final class MarkerAppContract {
         public final static String TABLE_NAME = "audience";
 
         public final static String _ID = BaseColumns._ID;
-        public final static String COLUMN_AUDIENCE = "audience";
+        public final static String COLUMN_AUDIENCE = "audienceee";
         public final static String COLUMN_REDMARKER = "red_marker";
         public final static String COLUMN_BLUEMARKER = "blue_marker";
         public final static String COLUMN_GREENMARKER = "green_marker";
